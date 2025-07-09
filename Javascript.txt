@@ -1,0 +1,23 @@
+// Event klik tombol di halaman utama
+const btn = document.getElementById('klikSaya');
+if (btn) {
+  btn.addEventListener('click', () => {
+    alert('Tombol diklik!');
+  });
+}
+
+// Validasi form di halaman kontak
+const form = document.getElementById('formKontak');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nama = document.getElementById('nama').value;
+    const pesan = document.getElementById('pesan').value;
+    if (nama === '' || pesan === '') {
+      alert('Mohon isi semua kolom!');
+    } else {
+      alert('Terima kasih, ' + nama + '! Pesan Anda sudah terkirim.');
+      form.reset();
+    }
+  });
+}
