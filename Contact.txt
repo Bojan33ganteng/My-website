@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kontak</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Tentang Saya</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="formKontak">
+      <label>Nama:</label><br />
+      <input type="text" id="nama" /><br /><br />
+      <label>Pesan:</label><br />
+      <textarea id="pesan"></textarea><br /><br />
+      <button type="submit">Kirim</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Nama Kamu</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
